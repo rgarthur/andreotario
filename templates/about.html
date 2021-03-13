@@ -47,8 +47,25 @@
 
         <div class="index">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas, arcu venenatis sodales porta, mauris sem fermentum lectus, non vehicula diam ipsum sit amet nulla. Quisque lacinia volutpat magna, vel consectetur sem accumsan non. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque ut auctor ante. Proin eu interdum purus. Etiam sagittis neque quis imperdiet sodales. Aliquam porta libero vel eros rutrum, at eleifend sapien placerat. Praesent lacus risus, fringilla i</p>
-        </div>
+            <img id="ea" src="{{ url_for('static',filename = 'img/karol-conka-bbb21-1400x800-0121_0.jpg') }}" hidden>
+            </div>
+
 
     </body>
+
+    <script type="text/javascript">
+    
+        let clicks = 0;
+        document.getElementsByTagName('p')[0].onclick = function(){
+
+            clicks++;
+            if (clicks == 5){
+
+                document.getElementById('ea').removeAttribute('hidden');
+
+            }
+        }   
+
+    </script>
 
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+            <title>sas</title>
+            <style>
+                 body{
+            padding-left: 20%;
+            padding-right: 20%; 
+            background-color: rgb(35, 202, 146);
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav{
+            display:flex;
+            justify-content: flex-end;
+            
+        }
+        nav a{
+            padding-left: 30px;
+            padding-top: 30px;
+            text-decoration: none;
+            color:black;
+        }
+
+        nav a:hover{
+            color:beige;
+        }
+
+        .login {
+            padding-top: 40px;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Aposta seu dinheiro amigao</h1>
+            <nav>
+                <a href="/">home</a>
+                <a href="/about">about</a>
+            </nav>
+        </header>
+
+        <div class='login'>
+
+            <form method="POST">
+
+                <div>
+                    <p>Username</p>
+                    
+                    
+                    <input type="text" name="username"></input>
+                </div>
+
+
+                </div> 
+                    <p>Password</p>   
+                    <input type="password" name="password"></input>
+                </div>
+
+                <button type="submit"> Sign In</button>
+
+
+
+            </form>
+
+        </div>
+
+    </body>
+
+</html>
